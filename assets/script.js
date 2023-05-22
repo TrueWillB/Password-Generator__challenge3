@@ -40,7 +40,7 @@ function writePassword() {
   }
   while (criteriaCheck == false) {
     criteriaString = prompt(
-      "Please type all criteria for your password. At least one criteria must be selected:\n" +
+      "Please type all criteria for your password. You may type as many as you want, but at least one criteria must be selected. Text other than L, U, N, or S will be stripped out:\n" +
         "Type 'L' to include lowercase letters\n" +
         "Type 'U' to include uppercase letters\n" +
         "Type 'N' to include numerals\n" +
@@ -87,7 +87,7 @@ function criteriaChecker(inputString) {
 
 function generatePassword(uInclude, lInclude, nInclude, sInclude, passLength) {
   var finishedPassword = "";
-  var charPossibilityArray = ["intentionally left blank"]; //I couldn't find a way to just push elements onto an empty array, which is what I wanted to do in the first place. I decided instead to just make a burner array and then delete it later then unshift
+  var charPossibilityArray = ["intentionally left blank"]; //I couldn't find a way to just push elements onto an empty array, which is what I wanted to do in the first place. I decided instead to just make a burner array element, unshift my elements in, then pop out the unneeded element
   if (sInclude === true) {
     charPossibilityArray.unshift(passCharRefArray[3]);
   }
