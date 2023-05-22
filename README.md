@@ -12,3 +12,7 @@ This is a simple password generator, written as a first introduction to the use 
 - Rather than prompt the user over and over again, I decided to just let them enter all the criteria at once by just typing the first letter of the type of characters that they wanted. It is not case-sensitive, and any characters other than the ones specified are simply stripped out
 - The website layout was given to us via starter code, which can be found here: https://github.com/coding-boot-camp/friendly-parakeet
 - I hope you enjoy playing with it!
+
+## Deployed Application: https://willis291.github.io/Password-Generator__challenge3/
+
+![Website with 128-character password displayed](./assets/website_screenshot.png)
